@@ -1,12 +1,12 @@
 function changeText(){
 	
 	var parent =document.getElementById('main');
-	var child=parent.lastElementChild;
+	var child=parent.firstElementChild;
 	child.style.color = "blue";
 	
 }
 
-/*=function newParagraph(){
+ function newParagraph(){
 	
 	//document.getElementById("Image").src="Right.jpg";
 	//var firstParaText= paragraph[0].innerHTML;
@@ -14,12 +14,14 @@ function changeText(){
 	//var addThem = paragraph[2].innerHTML = firstParaText + secondParaText;
 	
 	//var elemntH = document.createElement("h2")
-	var main = document.getElementById("main");
-	main.appendChild(elementH);
-	var textH = document.createTextNode(" Rick Astley - (Never Gonna Give you up) ");
-	elementH.appendChild(textH);
+	//var main = document.getElementById("main");
+	//main.appendChild(elementH);
+	//var textH = document.createTextNode(" Rick Astley - (Never Gonna Give you up) ");
+	//elementH.appendChild(textH);
 	
 	var element= document.createElement("p");
+	
+	var main = document.getElementById("main");
 	
 	main.appendChild(element);
 	
@@ -33,12 +35,9 @@ function changeText(){
 	
 }
 
-//function removeHeader(){
+function removeHeader(){
 	
-	var elementH= document.getElementsByTagName("h2")[1];
-	var parent = elementH.parentNode;
-	parent.removeChild(elementH);
-	
-	var elementP= document.getElementsByTagName("p")[3];
+	var elementP= document.getElementsByTagName("p")[4];
+	var parent = elementP.parentNode;
 	parent.removeChild(elementP);
-}*/
+}
